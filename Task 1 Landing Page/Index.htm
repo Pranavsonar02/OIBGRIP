@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+<style type="text/css">
+    *{ padding: 0; margin: 0; box-sizing: border-box;}
+    header{
+        width: 100%;
+        height: 100vh;
+        background: url(Images/Bg1.jpg) ;
+        background-size: cover;
+        font-family: sans-serif;
+    }
+    nav{
+        width: 100% ;
+        height: 100px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 2px solid indianred;
+        transition: 0.4s linear ;
+    }
+    .menu a:hover:before{
+        width: 90%;
+    }
+    .register a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: indianred;
+        border-radius: 8px;
+    }
+    .register a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+        transition: 0.4s;
+    }
+    .headertxt{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: coral;
+    }
+    .headertxt span{
+        letter-spacing: 5px;
+        font-size: 3em;
+    }
+    .headertxt h1{
+        font-size: 1.5em;
+    }
+    .headertxt a{
+        text-decoration: none;
+        background-color: indianred;
+        font-size: 25px;
+        padding: 10px,20px;
+        color: black;
+        letter-spacing: 3px;
+        border-radius: 5px;
+        padding: 3px,5px;
+    }
+    .headertxt a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+        transition: 0.4s;
+    }
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            Love For Dogs
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Visit Us</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="register">
+            <a href="#">Login/Signup</a>
+        </div>
+    </nav>
+    <section class="headertxt">
+        <span>Welcome</span>
+        <h1>Everything your Dog needs at one place</h1>
+        <br>
+        <a href="#">Buy Now</a>
+    </section>
+</body>
+</html>
